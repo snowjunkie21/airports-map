@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f7df2adbaaacca649fa2647982e5fc7a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f7df2adbaaacca649fa2647982e5fc7a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f7df2adbaaacca649fa2647982e5fc7a = L.map(
+                "map_f7df2adbaaacca649fa2647982e5fc7a",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_483d5a22e2ee127d93c492ce5ce4d391 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var marker_d2d3e22788403f2817c05159e7c557b3 = L.marker(
+                [33.6407, -84.4277],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_e1a840a5abf3aa6a362d43fca85c4d51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d2d3e22788403f2817c05159e7c557b3.setIcon(icon_e1a840a5abf3aa6a362d43fca85c4d51);
+        
+    
+        var popup_27bc4448b130b2ea127a33b918631f8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e64d656f46fb1cdc7f985bc0ecdde6f = $(`<div id="html_7e64d656f46fb1cdc7f985bc0ecdde6f" style="width: 100.0%; height: 100.0%;">Atlanta (ATL) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_27bc4448b130b2ea127a33b918631f8a.setContent(html_7e64d656f46fb1cdc7f985bc0ecdde6f);
+        
+
+        marker_d2d3e22788403f2817c05159e7c557b3.bindPopup(popup_27bc4448b130b2ea127a33b918631f8a)
+        ;
+
+        
+    
+    
+            var marker_5eba97c4354ee6a9b61f1135725aa017 = L.marker(
+                [30.1944, -97.67],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_a084b4aa4a760c9c8ab0676f8fa26066 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5eba97c4354ee6a9b61f1135725aa017.setIcon(icon_a084b4aa4a760c9c8ab0676f8fa26066);
+        
+    
+        var popup_f916f36fbbabad96e0949bde173b4604 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53e26850695137e85a72ffb63f5e7a44 = $(`<div id="html_53e26850695137e85a72ffb63f5e7a44" style="width: 100.0%; height: 100.0%;">Austin (AUS) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_f916f36fbbabad96e0949bde173b4604.setContent(html_53e26850695137e85a72ffb63f5e7a44);
+        
+
+        marker_5eba97c4354ee6a9b61f1135725aa017.bindPopup(popup_f916f36fbbabad96e0949bde173b4604)
+        ;
+
+        
+    
+    
+            var marker_0815819dff5597b1d0655d618214de86 = L.marker(
+                [39.1754, -76.6684],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_0437bdb9a75d596f11b0c21bfb343ca6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0815819dff5597b1d0655d618214de86.setIcon(icon_0437bdb9a75d596f11b0c21bfb343ca6);
+        
+    
+        var popup_ce4f0960e6bd65813bfff1b342122fcf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84949352187c53c94ce2fd2293115752 = $(`<div id="html_84949352187c53c94ce2fd2293115752" style="width: 100.0%; height: 100.0%;">Baltimore (BWI) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_ce4f0960e6bd65813bfff1b342122fcf.setContent(html_84949352187c53c94ce2fd2293115752);
+        
+
+        marker_0815819dff5597b1d0655d618214de86.bindPopup(popup_ce4f0960e6bd65813bfff1b342122fcf)
+        ;
+
+        
+    
+    
+            var marker_884f569d9d394ebd58428df6e3c3ac47 = L.marker(
+                [42.3656, -71.0096],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_dc2f773cbc697af29419f736a52337bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_884f569d9d394ebd58428df6e3c3ac47.setIcon(icon_dc2f773cbc697af29419f736a52337bf);
+        
+    
+        var popup_af35fed9f62489aaea99a1d54d131fad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14dabc2b28db2b776160cb0c4944a494 = $(`<div id="html_14dabc2b28db2b776160cb0c4944a494" style="width: 100.0%; height: 100.0%;">Boston (BOS) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_af35fed9f62489aaea99a1d54d131fad.setContent(html_14dabc2b28db2b776160cb0c4944a494);
+        
+
+        marker_884f569d9d394ebd58428df6e3c3ac47.bindPopup(popup_af35fed9f62489aaea99a1d54d131fad)
+        ;
+
+        
+    
+    
+            var marker_6d6949c08d9522aa13df3c188dc8eda8 = L.marker(
+                [41.9742, -87.9073],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_8478cffd3ee4b7023cb85e6c21757a27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6d6949c08d9522aa13df3c188dc8eda8.setIcon(icon_8478cffd3ee4b7023cb85e6c21757a27);
+        
+    
+        var popup_5a7632ff5ea6c7623d054288b8f450a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbb5d48bbba1f020af4502cc15f14cf3 = $(`<div id="html_fbb5d48bbba1f020af4502cc15f14cf3" style="width: 100.0%; height: 100.0%;">Chicago (ORD) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_5a7632ff5ea6c7623d054288b8f450a3.setContent(html_fbb5d48bbba1f020af4502cc15f14cf3);
+        
+
+        marker_6d6949c08d9522aa13df3c188dc8eda8.bindPopup(popup_5a7632ff5ea6c7623d054288b8f450a3)
+        ;
+
+        
+    
+    
+            var marker_f39027d017c6ac1b020f781646162f8f = L.marker(
+                [39.0488, -84.6676],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_f34216defae74d2ef8827686833f43b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f39027d017c6ac1b020f781646162f8f.setIcon(icon_f34216defae74d2ef8827686833f43b6);
+        
+    
+        var popup_eb4a42362ac7dee596970f7909f14f2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f947e9bf88cd96454e4ba78de44c7808 = $(`<div id="html_f947e9bf88cd96454e4ba78de44c7808" style="width: 100.0%; height: 100.0%;">Cincinnati (CVG) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_eb4a42362ac7dee596970f7909f14f2f.setContent(html_f947e9bf88cd96454e4ba78de44c7808);
+        
+
+        marker_f39027d017c6ac1b020f781646162f8f.bindPopup(popup_eb4a42362ac7dee596970f7909f14f2f)
+        ;
+
+        
+    
+    
+            var marker_8a52a773e9d9b0df84d811aea4332efc = L.marker(
+                [41.4114, -81.8498],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_b396b7915fc0178139bd827c18ef1d2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a52a773e9d9b0df84d811aea4332efc.setIcon(icon_b396b7915fc0178139bd827c18ef1d2d);
+        
+    
+        var popup_f108a4b94c881bf71b1343d61bf2fa90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aafc165d2932e49e0f42a2aeebd2d9cd = $(`<div id="html_aafc165d2932e49e0f42a2aeebd2d9cd" style="width: 100.0%; height: 100.0%;">Cleveland (CLE) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_f108a4b94c881bf71b1343d61bf2fa90.setContent(html_aafc165d2932e49e0f42a2aeebd2d9cd);
+        
+
+        marker_8a52a773e9d9b0df84d811aea4332efc.bindPopup(popup_f108a4b94c881bf71b1343d61bf2fa90)
+        ;
+
+        
+    
+    
+            var marker_a09bbc9feb3a245bd624c0d24acd0806 = L.marker(
+                [39.998, -82.8919],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_d031f36104d20655b3200a1e0a05aef4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a09bbc9feb3a245bd624c0d24acd0806.setIcon(icon_d031f36104d20655b3200a1e0a05aef4);
+        
+    
+        var popup_947f432762e47fb7db5e30b97d8a0bc0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7ca39565a08b2db048ff38da0a3f0e0 = $(`<div id="html_a7ca39565a08b2db048ff38da0a3f0e0" style="width: 100.0%; height: 100.0%;">Columbus (CMH) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_947f432762e47fb7db5e30b97d8a0bc0.setContent(html_a7ca39565a08b2db048ff38da0a3f0e0);
+        
+
+        marker_a09bbc9feb3a245bd624c0d24acd0806.bindPopup(popup_947f432762e47fb7db5e30b97d8a0bc0)
+        ;
+
+        
+    
+    
+            var marker_106cdfe21bc51867cc982ce3d5508d2a = L.marker(
+                [32.8998, -97.0403],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_96947fafd618107c4317a805e34ec8cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_106cdfe21bc51867cc982ce3d5508d2a.setIcon(icon_96947fafd618107c4317a805e34ec8cc);
+        
+    
+        var popup_87465bda1e77780ce28bd229bac1b12a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_152198834d7a9a80e19cb97a83dd7770 = $(`<div id="html_152198834d7a9a80e19cb97a83dd7770" style="width: 100.0%; height: 100.0%;">Dallas (DFW) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_87465bda1e77780ce28bd229bac1b12a.setContent(html_152198834d7a9a80e19cb97a83dd7770);
+        
+
+        marker_106cdfe21bc51867cc982ce3d5508d2a.bindPopup(popup_87465bda1e77780ce28bd229bac1b12a)
+        ;
+
+        
+    
+    
+            var marker_e46121e9a3fc1af7f0b48d0ae80bc636 = L.marker(
+                [39.8561, -104.6737],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_ba283eb5882d60edefd2881debc0eb37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e46121e9a3fc1af7f0b48d0ae80bc636.setIcon(icon_ba283eb5882d60edefd2881debc0eb37);
+        
+    
+        var popup_6aa34131cee106a73b2a85b26228411b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52024c3286be6617aaaaeab2cc5b8ecc = $(`<div id="html_52024c3286be6617aaaaeab2cc5b8ecc" style="width: 100.0%; height: 100.0%;">Denver (DEN) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_6aa34131cee106a73b2a85b26228411b.setContent(html_52024c3286be6617aaaaeab2cc5b8ecc);
+        
+
+        marker_e46121e9a3fc1af7f0b48d0ae80bc636.bindPopup(popup_6aa34131cee106a73b2a85b26228411b)
+        ;
+
+        
+    
+    
+            var marker_6ac2a5bd600fcbd4dc6be328c59fbcf8 = L.marker(
+                [42.2124, -83.3534],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_3fb29ca109c1a34fe26f78f4d20b835a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6ac2a5bd600fcbd4dc6be328c59fbcf8.setIcon(icon_3fb29ca109c1a34fe26f78f4d20b835a);
+        
+    
+        var popup_4652ba4bf4ac509678e39118e2162779 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b67a4aa6804110b996dc1c0e3ba5a97 = $(`<div id="html_7b67a4aa6804110b996dc1c0e3ba5a97" style="width: 100.0%; height: 100.0%;">Detroit (DTW) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_4652ba4bf4ac509678e39118e2162779.setContent(html_7b67a4aa6804110b996dc1c0e3ba5a97);
+        
+
+        marker_6ac2a5bd600fcbd4dc6be328c59fbcf8.bindPopup(popup_4652ba4bf4ac509678e39118e2162779)
+        ;
+
+        
+    
+    
+            var marker_60b80e4914ff429e99d5dd00a4e098f3 = L.marker(
+                [26.0726, -80.1527],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_7e0c4be8d2cb6739530a27b0b2d412d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_60b80e4914ff429e99d5dd00a4e098f3.setIcon(icon_7e0c4be8d2cb6739530a27b0b2d412d6);
+        
+    
+        var popup_3951dbc84a9fcf254b1c33b5d7f0c0bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac86ac806eb705231f418cc7219bfdc0 = $(`<div id="html_ac86ac806eb705231f418cc7219bfdc0" style="width: 100.0%; height: 100.0%;">Fort Lauderdale (FLL) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_3951dbc84a9fcf254b1c33b5d7f0c0bd.setContent(html_ac86ac806eb705231f418cc7219bfdc0);
+        
+
+        marker_60b80e4914ff429e99d5dd00a4e098f3.bindPopup(popup_3951dbc84a9fcf254b1c33b5d7f0c0bd)
+        ;
+
+        
+    
+    
+            var marker_18510870e9c36d57f7063dfe3e716534 = L.marker(
+                [36.7762, -119.7181],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_5c5a4a873ccd8f8f91f00783591c90ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_18510870e9c36d57f7063dfe3e716534.setIcon(icon_5c5a4a873ccd8f8f91f00783591c90ed);
+        
+    
+        var popup_987c2866a45e554dcf72e0d68054633a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_074b1cee23aaf194b7645ce0391c074c = $(`<div id="html_074b1cee23aaf194b7645ce0391c074c" style="width: 100.0%; height: 100.0%;">Fresno (FAT) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_987c2866a45e554dcf72e0d68054633a.setContent(html_074b1cee23aaf194b7645ce0391c074c);
+        
+
+        marker_18510870e9c36d57f7063dfe3e716534.bindPopup(popup_987c2866a45e554dcf72e0d68054633a)
+        ;
+
+        
+    
+    
+            var marker_fd6925550dc9647ebe56311497041bf1 = L.marker(
+                [21.3187, -157.9225],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_733419a69d14cba5ed68aac48f3a40c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fd6925550dc9647ebe56311497041bf1.setIcon(icon_733419a69d14cba5ed68aac48f3a40c8);
+        
+    
+        var popup_b80e419fdbe48e96719995bb1715e8dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b7939cc395a633a4d43909ff0030e0e = $(`<div id="html_1b7939cc395a633a4d43909ff0030e0e" style="width: 100.0%; height: 100.0%;">Honolulu, Oahu (HNL) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_b80e419fdbe48e96719995bb1715e8dc.setContent(html_1b7939cc395a633a4d43909ff0030e0e);
+        
+
+        marker_fd6925550dc9647ebe56311497041bf1.bindPopup(popup_b80e419fdbe48e96719995bb1715e8dc)
+        ;
+
+        
+    
+    
+            var marker_1d004fa74259ac5cee2f45513d9aae6a = L.marker(
+                [29.9902, -95.3368],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_a2ee8fa78e801ed52df9d34674435d7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1d004fa74259ac5cee2f45513d9aae6a.setIcon(icon_a2ee8fa78e801ed52df9d34674435d7e);
+        
+    
+        var popup_045978e1171b7259a6a9c5678eca2237 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e01f6f713c79ac239fa502d6878c3f0 = $(`<div id="html_9e01f6f713c79ac239fa502d6878c3f0" style="width: 100.0%; height: 100.0%;">Houston (IAH) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_045978e1171b7259a6a9c5678eca2237.setContent(html_9e01f6f713c79ac239fa502d6878c3f0);
+        
+
+        marker_1d004fa74259ac5cee2f45513d9aae6a.bindPopup(popup_045978e1171b7259a6a9c5678eca2237)
+        ;
+
+        
+    
+    
+            var marker_dbff5f72628c9a2bb01196874f67a0ae = L.marker(
+                [39.7173, -86.2944],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_f9f70db18b458c89dfa80676b148b6f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dbff5f72628c9a2bb01196874f67a0ae.setIcon(icon_f9f70db18b458c89dfa80676b148b6f0);
+        
+    
+        var popup_4d4e47d138c3757398629740addaa93c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46f38a2e617481c6deacfe29de6f982b = $(`<div id="html_46f38a2e617481c6deacfe29de6f982b" style="width: 100.0%; height: 100.0%;">Indianapolis (IND) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_4d4e47d138c3757398629740addaa93c.setContent(html_46f38a2e617481c6deacfe29de6f982b);
+        
+
+        marker_dbff5f72628c9a2bb01196874f67a0ae.bindPopup(popup_4d4e47d138c3757398629740addaa93c)
+        ;
+
+        
+    
+    
+            var marker_d90ac544f05768615a54d3227c3766a5 = L.marker(
+                [48.3105, -114.2551],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_37968d5806c448f2afda76a9baafcb09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d90ac544f05768615a54d3227c3766a5.setIcon(icon_37968d5806c448f2afda76a9baafcb09);
+        
+    
+        var popup_22ed148c906ca990a89a7d041854fd7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3809fb322e072913d7f4098d13bdf4d5 = $(`<div id="html_3809fb322e072913d7f4098d13bdf4d5" style="width: 100.0%; height: 100.0%;">Kalispell (FCA) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_22ed148c906ca990a89a7d041854fd7e.setContent(html_3809fb322e072913d7f4098d13bdf4d5);
+        
+
+        marker_d90ac544f05768615a54d3227c3766a5.bindPopup(popup_22ed148c906ca990a89a7d041854fd7e)
+        ;
+
+        
+    
+    
+            var marker_69b2ebeadbbf09e33c6d4b59a49869a3 = L.marker(
+                [39.2976, -94.7139],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_edceb1ffb7954c272889b97e671474c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_69b2ebeadbbf09e33c6d4b59a49869a3.setIcon(icon_edceb1ffb7954c272889b97e671474c6);
+        
+    
+        var popup_fa14ed2939a1ab61b60bb1ae16ae99b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca7c07b292f412f70ca025e67a4e5863 = $(`<div id="html_ca7c07b292f412f70ca025e67a4e5863" style="width: 100.0%; height: 100.0%;">Kansas City (MCI) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_fa14ed2939a1ab61b60bb1ae16ae99b7.setContent(html_ca7c07b292f412f70ca025e67a4e5863);
+        
+
+        marker_69b2ebeadbbf09e33c6d4b59a49869a3.bindPopup(popup_fa14ed2939a1ab61b60bb1ae16ae99b7)
+        ;
+
+        
+    
+    
+            var marker_fa0436f267e5ce8421f87011fe85dae1 = L.marker(
+                [36.083, -115.1537],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_5e4b95027120e4ae672a929bf5f3e064 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fa0436f267e5ce8421f87011fe85dae1.setIcon(icon_5e4b95027120e4ae672a929bf5f3e064);
+        
+    
+        var popup_ebe3ba683f68d778d9df9f2b590861b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_725fbc0eab1c7cc5e7fc47e419ce60d3 = $(`<div id="html_725fbc0eab1c7cc5e7fc47e419ce60d3" style="width: 100.0%; height: 100.0%;">Las Vegas (LAS) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_ebe3ba683f68d778d9df9f2b590861b1.setContent(html_725fbc0eab1c7cc5e7fc47e419ce60d3);
+        
+
+        marker_fa0436f267e5ce8421f87011fe85dae1.bindPopup(popup_ebe3ba683f68d778d9df9f2b590861b1)
+        ;
+
+        
+    
+    
+            var marker_47c1988759f31e3e197add78163b9c9b = L.marker(
+                [25.7959, -80.287],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_4c9139317ed2f7525fa6c1fecaca3c93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_47c1988759f31e3e197add78163b9c9b.setIcon(icon_4c9139317ed2f7525fa6c1fecaca3c93);
+        
+    
+        var popup_bb444b09993fb0e4ba7f1c80fc4bd200 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a4f912b57de3ffa9dbb5068df1563a7 = $(`<div id="html_4a4f912b57de3ffa9dbb5068df1563a7" style="width: 100.0%; height: 100.0%;">Miami (MIA) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_bb444b09993fb0e4ba7f1c80fc4bd200.setContent(html_4a4f912b57de3ffa9dbb5068df1563a7);
+        
+
+        marker_47c1988759f31e3e197add78163b9c9b.bindPopup(popup_bb444b09993fb0e4ba7f1c80fc4bd200)
+        ;
+
+        
+    
+    
+            var marker_cf94f029c9049738510ddc73ad24244f = L.marker(
+                [44.8848, -93.2223],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_bc5ce6c977fef685007cd1c8bb4b9cc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cf94f029c9049738510ddc73ad24244f.setIcon(icon_bc5ce6c977fef685007cd1c8bb4b9cc9);
+        
+    
+        var popup_eafe2494e126887c718fef671a7223e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31c2ea2cef2af0a8210c033359056bb7 = $(`<div id="html_31c2ea2cef2af0a8210c033359056bb7" style="width: 100.0%; height: 100.0%;">Minneapolis (MSP) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_eafe2494e126887c718fef671a7223e5.setContent(html_31c2ea2cef2af0a8210c033359056bb7);
+        
+
+        marker_cf94f029c9049738510ddc73ad24244f.bindPopup(popup_eafe2494e126887c718fef671a7223e5)
+        ;
+
+        
+    
+    
+            var marker_4df5ac0b65d1419241b478bc1a8bd2bf = L.marker(
+                [36.1245, -86.6782],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_e641af8d91c455a06345ae2de885ff70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4df5ac0b65d1419241b478bc1a8bd2bf.setIcon(icon_e641af8d91c455a06345ae2de885ff70);
+        
+    
+        var popup_c3cf3c831a69d7c5c7c99d3544a598a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf38edbe3bef5b43a9fdcd94703f98d3 = $(`<div id="html_bf38edbe3bef5b43a9fdcd94703f98d3" style="width: 100.0%; height: 100.0%;">Nashville (BNA) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_c3cf3c831a69d7c5c7c99d3544a598a6.setContent(html_bf38edbe3bef5b43a9fdcd94703f98d3);
+        
+
+        marker_4df5ac0b65d1419241b478bc1a8bd2bf.bindPopup(popup_c3cf3c831a69d7c5c7c99d3544a598a6)
+        ;
+
+        
+    
+    
+            var marker_c6a66846f4ab5e5741a2139712a619b6 = L.marker(
+                [29.9934, -90.258],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_b7b6b68e7ab1836034308c06fb39695b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6a66846f4ab5e5741a2139712a619b6.setIcon(icon_b7b6b68e7ab1836034308c06fb39695b);
+        
+    
+        var popup_87ab62b193d6db27301a8b306f4c4c4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4cc76cbb8253b69fb7dfd611d24ea5da = $(`<div id="html_4cc76cbb8253b69fb7dfd611d24ea5da" style="width: 100.0%; height: 100.0%;">New Orleans (MSY) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_87ab62b193d6db27301a8b306f4c4c4c.setContent(html_4cc76cbb8253b69fb7dfd611d24ea5da);
+        
+
+        marker_c6a66846f4ab5e5741a2139712a619b6.bindPopup(popup_87ab62b193d6db27301a8b306f4c4c4c)
+        ;
+
+        
+    
+    
+            var marker_d4af28fb5b6f04b1ea5ae95237d46407 = L.marker(
+                [40.6413, -73.7781],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_9dd3ea694d2daf9c9e8449724664809a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d4af28fb5b6f04b1ea5ae95237d46407.setIcon(icon_9dd3ea694d2daf9c9e8449724664809a);
+        
+    
+        var popup_5ea451f0317243590dcb33d7f6f417ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b571beae257bc8f145aec65e4f46eea = $(`<div id="html_3b571beae257bc8f145aec65e4f46eea" style="width: 100.0%; height: 100.0%;">New York City (JFK) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_5ea451f0317243590dcb33d7f6f417ca.setContent(html_3b571beae257bc8f145aec65e4f46eea);
+        
+
+        marker_d4af28fb5b6f04b1ea5ae95237d46407.bindPopup(popup_5ea451f0317243590dcb33d7f6f417ca)
+        ;
+
+        
+    
+    
+            var marker_23b0cb6653c5181281c0ed4f8bf466f9 = L.marker(
+                [40.6895, -74.1745],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_2accb973aa1d4d136f1bef42d9d0b7d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_23b0cb6653c5181281c0ed4f8bf466f9.setIcon(icon_2accb973aa1d4d136f1bef42d9d0b7d7);
+        
+    
+        var popup_5cc2290d8ed4e64d57acb46d7d8fbee7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7af84d63d8912ae7bfd15bfdf7f68ead = $(`<div id="html_7af84d63d8912ae7bfd15bfdf7f68ead" style="width: 100.0%; height: 100.0%;">Newark (EWR) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_5cc2290d8ed4e64d57acb46d7d8fbee7.setContent(html_7af84d63d8912ae7bfd15bfdf7f68ead);
+        
+
+        marker_23b0cb6653c5181281c0ed4f8bf466f9.bindPopup(popup_5cc2290d8ed4e64d57acb46d7d8fbee7)
+        ;
+
+        
+    
+    
+            var marker_93d3e622974ac2d9802146cb99edf454 = L.marker(
+                [35.3931, -97.6008],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_bc9eab56e288fcf059927bf7797cf63e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_93d3e622974ac2d9802146cb99edf454.setIcon(icon_bc9eab56e288fcf059927bf7797cf63e);
+        
+    
+        var popup_683b382ede1e749a8998b3044fd9ef1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25eb43c3994e4296235ad24b4e970a1a = $(`<div id="html_25eb43c3994e4296235ad24b4e970a1a" style="width: 100.0%; height: 100.0%;">Oklahoma City (OKC) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_683b382ede1e749a8998b3044fd9ef1f.setContent(html_25eb43c3994e4296235ad24b4e970a1a);
+        
+
+        marker_93d3e622974ac2d9802146cb99edf454.bindPopup(popup_683b382ede1e749a8998b3044fd9ef1f)
+        ;
+
+        
+    
+    
+            var marker_5ee4a51a69f8d685578e3ca6b1c8a853 = L.marker(
+                [34.0556, -117.6006],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_e81f4234329e0d0329274a3a3de3499f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5ee4a51a69f8d685578e3ca6b1c8a853.setIcon(icon_e81f4234329e0d0329274a3a3de3499f);
+        
+    
+        var popup_3fae57183b328090ba25af1b43a2efe7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1eb5300f90b5d99f8d09ab0266f69964 = $(`<div id="html_1eb5300f90b5d99f8d09ab0266f69964" style="width: 100.0%; height: 100.0%;">Ontario (ONT) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_3fae57183b328090ba25af1b43a2efe7.setContent(html_1eb5300f90b5d99f8d09ab0266f69964);
+        
+
+        marker_5ee4a51a69f8d685578e3ca6b1c8a853.bindPopup(popup_3fae57183b328090ba25af1b43a2efe7)
+        ;
+
+        
+    
+    
+            var marker_8130090e5ef502a569cb5e8a81e3f886 = L.marker(
+                [28.4312, -81.3081],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_f832bd8206ea31c9f46903d57961d778 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8130090e5ef502a569cb5e8a81e3f886.setIcon(icon_f832bd8206ea31c9f46903d57961d778);
+        
+    
+        var popup_ae956ca38920cba0cc5d7da11ec84b05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ff93cad8eb259ebd201dc70f33ec3a1 = $(`<div id="html_7ff93cad8eb259ebd201dc70f33ec3a1" style="width: 100.0%; height: 100.0%;">Orlando (MCO) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_ae956ca38920cba0cc5d7da11ec84b05.setContent(html_7ff93cad8eb259ebd201dc70f33ec3a1);
+        
+
+        marker_8130090e5ef502a569cb5e8a81e3f886.bindPopup(popup_ae956ca38920cba0cc5d7da11ec84b05)
+        ;
+
+        
+    
+    
+            var marker_aa8609a465ed99cc71d84db1a240ebbf = L.marker(
+                [33.8297, -116.506],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_f40870b02f8d0916937d25ece4bc4465 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aa8609a465ed99cc71d84db1a240ebbf.setIcon(icon_f40870b02f8d0916937d25ece4bc4465);
+        
+    
+        var popup_f72b880d9919bd16f65acca0f8f98b1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3be9c90222d49a8dd97ea02220fc2276 = $(`<div id="html_3be9c90222d49a8dd97ea02220fc2276" style="width: 100.0%; height: 100.0%;">Palm Springs (PSP) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_f72b880d9919bd16f65acca0f8f98b1c.setContent(html_3be9c90222d49a8dd97ea02220fc2276);
+        
+
+        marker_aa8609a465ed99cc71d84db1a240ebbf.bindPopup(popup_f72b880d9919bd16f65acca0f8f98b1c)
+        ;
+
+        
+    
+    
+            var marker_c4ff7e60fbb24f7914336bf063e269e5 = L.marker(
+                [39.8744, -75.2424],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_ab9470cfee20bd113f7c890ef62e61b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c4ff7e60fbb24f7914336bf063e269e5.setIcon(icon_ab9470cfee20bd113f7c890ef62e61b3);
+        
+    
+        var popup_e1e449c0299277ad1e439fbbd55e3f2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4490fe9e8d791c1d2dfff43b911cbb32 = $(`<div id="html_4490fe9e8d791c1d2dfff43b911cbb32" style="width: 100.0%; height: 100.0%;">Philadelphia (PHL) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_e1e449c0299277ad1e439fbbd55e3f2a.setContent(html_4490fe9e8d791c1d2dfff43b911cbb32);
+        
+
+        marker_c4ff7e60fbb24f7914336bf063e269e5.bindPopup(popup_e1e449c0299277ad1e439fbbd55e3f2a)
+        ;
+
+        
+    
+    
+            var marker_9cda4aa5599c1de5afd635e64e5a4620 = L.marker(
+                [33.4342, -112.0116],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_39a78a4c83f98dfa066cc705b96f42d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9cda4aa5599c1de5afd635e64e5a4620.setIcon(icon_39a78a4c83f98dfa066cc705b96f42d9);
+        
+    
+        var popup_7259da586e8ba18c711a17b5db1e9cf2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_62c1bf799f6ddc56b96d423031213ffe = $(`<div id="html_62c1bf799f6ddc56b96d423031213ffe" style="width: 100.0%; height: 100.0%;">Phoenix (PHX) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_7259da586e8ba18c711a17b5db1e9cf2.setContent(html_62c1bf799f6ddc56b96d423031213ffe);
+        
+
+        marker_9cda4aa5599c1de5afd635e64e5a4620.bindPopup(popup_7259da586e8ba18c711a17b5db1e9cf2)
+        ;
+
+        
+    
+    
+            var marker_786277dbe6906d8d543b8aec3c55863e = L.marker(
+                [40.4914, -80.2329],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_5060390be3caf2ce5a7e29bd26ff938f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_786277dbe6906d8d543b8aec3c55863e.setIcon(icon_5060390be3caf2ce5a7e29bd26ff938f);
+        
+    
+        var popup_f637c249826bcbb30d19604d68830e61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27416908a3e5eaafb1ec61bdad48ee34 = $(`<div id="html_27416908a3e5eaafb1ec61bdad48ee34" style="width: 100.0%; height: 100.0%;">Pittsburg (PIT) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_f637c249826bcbb30d19604d68830e61.setContent(html_27416908a3e5eaafb1ec61bdad48ee34);
+        
+
+        marker_786277dbe6906d8d543b8aec3c55863e.bindPopup(popup_f637c249826bcbb30d19604d68830e61)
+        ;
+
+        
+    
+    
+            var marker_077e56a6c639a371cacf830663181403 = L.marker(
+                [45.5898, -122.5951],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_085eda375fd73ce3b50edf35cb9ae352 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_077e56a6c639a371cacf830663181403.setIcon(icon_085eda375fd73ce3b50edf35cb9ae352);
+        
+    
+        var popup_3469cd1ae408817704a510021bde2f0a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4b2c449b04b512a5556e333eb6b7ee2 = $(`<div id="html_c4b2c449b04b512a5556e333eb6b7ee2" style="width: 100.0%; height: 100.0%;">Portland (PDX) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_3469cd1ae408817704a510021bde2f0a.setContent(html_c4b2c449b04b512a5556e333eb6b7ee2);
+        
+
+        marker_077e56a6c639a371cacf830663181403.bindPopup(popup_3469cd1ae408817704a510021bde2f0a)
+        ;
+
+        
+    
+    
+            var marker_15e67b24496b14c57b6acbab8c979f25 = L.marker(
+                [35.8776, -78.7875],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_fdb332d78f9093dfa6d993bc8bdb6e32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_15e67b24496b14c57b6acbab8c979f25.setIcon(icon_fdb332d78f9093dfa6d993bc8bdb6e32);
+        
+    
+        var popup_e319f72d6f7285bb0f98c4e18ad2ec9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91638f2abe7fceb6ef25aca5da9e1fd8 = $(`<div id="html_91638f2abe7fceb6ef25aca5da9e1fd8" style="width: 100.0%; height: 100.0%;">Raleigh/Durham (RDU) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_e319f72d6f7285bb0f98c4e18ad2ec9c.setContent(html_91638f2abe7fceb6ef25aca5da9e1fd8);
+        
+
+        marker_15e67b24496b14c57b6acbab8c979f25.bindPopup(popup_e319f72d6f7285bb0f98c4e18ad2ec9c)
+        ;
+
+        
+    
+    
+            var marker_952dc18335dc1955077511f5fc8a2a5e = L.marker(
+                [38.6951, -121.5908],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_99346e2d47765cb670ad833e2e2eb567 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_952dc18335dc1955077511f5fc8a2a5e.setIcon(icon_99346e2d47765cb670ad833e2e2eb567);
+        
+    
+        var popup_458ab8c670ef8527df5317e281855326 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcf54bd0109579e6ca7f64ab97b5cdaf = $(`<div id="html_dcf54bd0109579e6ca7f64ab97b5cdaf" style="width: 100.0%; height: 100.0%;">Sacramento (SMF) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_458ab8c670ef8527df5317e281855326.setContent(html_dcf54bd0109579e6ca7f64ab97b5cdaf);
+        
+
+        marker_952dc18335dc1955077511f5fc8a2a5e.bindPopup(popup_458ab8c670ef8527df5317e281855326)
+        ;
+
+        
+    
+    
+            var marker_b58288bab689e6265f1dde5205d92636 = L.marker(
+                [40.7899, -111.9791],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_c1010746f8ceb19da67f7b537a20945b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b58288bab689e6265f1dde5205d92636.setIcon(icon_c1010746f8ceb19da67f7b537a20945b);
+        
+    
+        var popup_ac1f91301f1cdf200b1383e3000449eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf6c5056d2df0b89ffd24f806235a91d = $(`<div id="html_bf6c5056d2df0b89ffd24f806235a91d" style="width: 100.0%; height: 100.0%;">Salt Lake City (SLC) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_ac1f91301f1cdf200b1383e3000449eb.setContent(html_bf6c5056d2df0b89ffd24f806235a91d);
+        
+
+        marker_b58288bab689e6265f1dde5205d92636.bindPopup(popup_ac1f91301f1cdf200b1383e3000449eb)
+        ;
+
+        
+    
+    
+            var marker_90bf2e70333c10fac8a912e55dcc4cff = L.marker(
+                [29.4244, -98.4912],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_4158516edc431b28421d14afda5bcba3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90bf2e70333c10fac8a912e55dcc4cff.setIcon(icon_4158516edc431b28421d14afda5bcba3);
+        
+    
+        var popup_0915b49dd6e94163995e19cdaf5e1fb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_549ab0bd3ae1eb71a82e31031bf866a8 = $(`<div id="html_549ab0bd3ae1eb71a82e31031bf866a8" style="width: 100.0%; height: 100.0%;">San Antonio (SAT) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_0915b49dd6e94163995e19cdaf5e1fb2.setContent(html_549ab0bd3ae1eb71a82e31031bf866a8);
+        
+
+        marker_90bf2e70333c10fac8a912e55dcc4cff.bindPopup(popup_0915b49dd6e94163995e19cdaf5e1fb2)
+        ;
+
+        
+    
+    
+            var marker_f189d1d5ea3ca054ea019d236549cc7d = L.marker(
+                [37.6213, -122.379],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_91fcb429ae7f5dc48f9e414ee763dfbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f189d1d5ea3ca054ea019d236549cc7d.setIcon(icon_91fcb429ae7f5dc48f9e414ee763dfbe);
+        
+    
+        var popup_f34cadaeb0159e7b4922000ef6b4f2a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5378978568f6b51fbced89e8a2e0f3ef = $(`<div id="html_5378978568f6b51fbced89e8a2e0f3ef" style="width: 100.0%; height: 100.0%;">San Francisco (SFO) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_f34cadaeb0159e7b4922000ef6b4f2a1.setContent(html_5378978568f6b51fbced89e8a2e0f3ef);
+        
+
+        marker_f189d1d5ea3ca054ea019d236549cc7d.bindPopup(popup_f34cadaeb0159e7b4922000ef6b4f2a1)
+        ;
+
+        
+    
+    
+            var marker_ee76c5ddc631b28257bda223cf1e16e0 = L.marker(
+                [37.3626, -121.929],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_828b21e851c70ffee967b87d93ca7407 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ee76c5ddc631b28257bda223cf1e16e0.setIcon(icon_828b21e851c70ffee967b87d93ca7407);
+        
+    
+        var popup_734823c1852ce597ad6d0f7a695c4758 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_48b4032733bc6ee4f5f0226f39020970 = $(`<div id="html_48b4032733bc6ee4f5f0226f39020970" style="width: 100.0%; height: 100.0%;">San Jose (SJC) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_734823c1852ce597ad6d0f7a695c4758.setContent(html_48b4032733bc6ee4f5f0226f39020970);
+        
+
+        marker_ee76c5ddc631b28257bda223cf1e16e0.bindPopup(popup_734823c1852ce597ad6d0f7a695c4758)
+        ;
+
+        
+    
+    
+            var marker_82222b24ceba77bf95eee1d3e84fc95d = L.marker(
+                [33.6757, -117.8682],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_6628b9311dd76793b9f1de3b09455245 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_82222b24ceba77bf95eee1d3e84fc95d.setIcon(icon_6628b9311dd76793b9f1de3b09455245);
+        
+    
+        var popup_714f2800e8b06175c8bd3189d9bd95be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31011cf161fbaaffd5c7cd330a070027 = $(`<div id="html_31011cf161fbaaffd5c7cd330a070027" style="width: 100.0%; height: 100.0%;">Santa Ana (Orange County) (SNA) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_714f2800e8b06175c8bd3189d9bd95be.setContent(html_31011cf161fbaaffd5c7cd330a070027);
+        
+
+        marker_82222b24ceba77bf95eee1d3e84fc95d.bindPopup(popup_714f2800e8b06175c8bd3189d9bd95be)
+        ;
+
+        
+    
+    
+            var marker_606733dc62a7611e674ab1b9feaf6640 = L.marker(
+                [47.4502, -122.3088],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_96ca5fbefd9f36d279befccda5f1ce4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_606733dc62a7611e674ab1b9feaf6640.setIcon(icon_96ca5fbefd9f36d279befccda5f1ce4a);
+        
+    
+        var popup_3fb5399bca113197dcff41aedce55670 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e9dd7b8069f903331c1a146c4d836d63 = $(`<div id="html_e9dd7b8069f903331c1a146c4d836d63" style="width: 100.0%; height: 100.0%;">Seattle (SEA) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_3fb5399bca113197dcff41aedce55670.setContent(html_e9dd7b8069f903331c1a146c4d836d63);
+        
+
+        marker_606733dc62a7611e674ab1b9feaf6640.bindPopup(popup_3fb5399bca113197dcff41aedce55670)
+        ;
+
+        
+    
+    
+            var marker_2cae6acc1a1bda48973e549fa294b499 = L.marker(
+                [38.7487, -90.37],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_7c8fa6d0ad2b8b2d92d360901863a1c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2cae6acc1a1bda48973e549fa294b499.setIcon(icon_7c8fa6d0ad2b8b2d92d360901863a1c0);
+        
+    
+        var popup_85a233e24cd432d5c73146558c1dadd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_600d9a0bd140b23961f5c68fc09c35bc = $(`<div id="html_600d9a0bd140b23961f5c68fc09c35bc" style="width: 100.0%; height: 100.0%;">St. Louis (STL) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_85a233e24cd432d5c73146558c1dadd2.setContent(html_600d9a0bd140b23961f5c68fc09c35bc);
+        
+
+        marker_2cae6acc1a1bda48973e549fa294b499.bindPopup(popup_85a233e24cd432d5c73146558c1dadd2)
+        ;
+
+        
+    
+    
+            var marker_ed5646c105f53371e6af91ea5e7422f6 = L.marker(
+                [43.5047, -114.295],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_a145f7c40b465cfa59d6c4bb08fdaa17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ed5646c105f53371e6af91ea5e7422f6.setIcon(icon_a145f7c40b465cfa59d6c4bb08fdaa17);
+        
+    
+        var popup_5f4a0eda8cacfe92a86615d16229aeb5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b310eba3c57a715b9853a66bf5f2f3e = $(`<div id="html_9b310eba3c57a715b9853a66bf5f2f3e" style="width: 100.0%; height: 100.0%;">Sun Valley (SUN) - Allows Pets Over 85 Degrees: Yes</div>`)[0];
+            popup_5f4a0eda8cacfe92a86615d16229aeb5.setContent(html_9b310eba3c57a715b9853a66bf5f2f3e);
+        
+
+        marker_ed5646c105f53371e6af91ea5e7422f6.bindPopup(popup_5f4a0eda8cacfe92a86615d16229aeb5)
+        ;
+
+        
+    
+    
+            var marker_5b972a704ecb90d0cc0a52fd94c3904b = L.marker(
+                [27.9755, -82.5332],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_629c06b863e02a2acac927105ec02412 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b972a704ecb90d0cc0a52fd94c3904b.setIcon(icon_629c06b863e02a2acac927105ec02412);
+        
+    
+        var popup_5e1fe6ba415c586995ea356baa3f8d16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_561a7418cd896f74c03e2531745e3a4d = $(`<div id="html_561a7418cd896f74c03e2531745e3a4d" style="width: 100.0%; height: 100.0%;">Tampa (TPA) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_5e1fe6ba415c586995ea356baa3f8d16.setContent(html_561a7418cd896f74c03e2531745e3a4d);
+        
+
+        marker_5b972a704ecb90d0cc0a52fd94c3904b.bindPopup(popup_5e1fe6ba415c586995ea356baa3f8d16)
+        ;
+
+        
+    
+    
+            var marker_2f6a3bba376f3e71785290903540f96f = L.marker(
+                [38.9531, -77.4565],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_5c62227a15ec2d6abb04bb542f545357 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f6a3bba376f3e71785290903540f96f.setIcon(icon_5c62227a15ec2d6abb04bb542f545357);
+        
+    
+        var popup_d389b33a1beb17df35f7712b20e88253 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1f1883f3093c518a8dd5f643d60e51f = $(`<div id="html_c1f1883f3093c518a8dd5f643d60e51f" style="width: 100.0%; height: 100.0%;">Washington DC - Dulles (IAD) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_d389b33a1beb17df35f7712b20e88253.setContent(html_c1f1883f3093c518a8dd5f643d60e51f);
+        
+
+        marker_2f6a3bba376f3e71785290903540f96f.bindPopup(popup_d389b33a1beb17df35f7712b20e88253)
+        ;
+
+        
+    
+    
+            var marker_603aacdd85801f7162870fa850c9ab33 = L.marker(
+                [38.8512, -77.0402],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_4fd1a02058c1e944d3505ac650c51cc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_603aacdd85801f7162870fa850c9ab33.setIcon(icon_4fd1a02058c1e944d3505ac650c51cc1);
+        
+    
+        var popup_f716fbfc926aa8d0437f7429d9d99dd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81b40567a89712f3be2cd4265dfe5972 = $(`<div id="html_81b40567a89712f3be2cd4265dfe5972" style="width: 100.0%; height: 100.0%;">Washington DC - Reagan (DCA) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_f716fbfc926aa8d0437f7429d9d99dd5.setContent(html_81b40567a89712f3be2cd4265dfe5972);
+        
+
+        marker_603aacdd85801f7162870fa850c9ab33.bindPopup(popup_f716fbfc926aa8d0437f7429d9d99dd5)
+        ;
+
+        
+    
+</script>
+</html>
