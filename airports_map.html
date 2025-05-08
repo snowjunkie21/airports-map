@@ -215,28 +215,27 @@
         
     
     
-var marker_8a52a773e9d9b0df84d811aea4332efc = L.marker(
-    [41.4114, -81.8498],
-    {}
-).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+            var marker_8a52a773e9d9b0df84d811aea4332efc = L.marker(
+                [41.4114, -81.8498],
+                {}
+            ).addTo(map_f7df2adbaaacca649fa2647982e5fc7a);
+        
+    
+            var icon_b396b7915fc0178139bd827c18ef1d2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8a52a773e9d9b0df84d811aea4332efc.setIcon(icon_b396b7915fc0178139bd827c18ef1d2d);
+        
+    
+        var popup_f108a4b94c881bf71b1343d61bf2fa90 = L.popup({"maxWidth": "100%"});
 
-var icon_cleveland = L.AwesomeMarkers.icon({
-    extraClasses: "fa-rotate-0",
-    icon: "info-sign",
-    iconColor: "white",
-    markerColor: "green",
-    prefix: "glyphicon"
-});
-marker_8a52a773e9d9b0df84d811aea4332efc.setIcon(icon_cleveland);
+        
+            var html_aafc165d2932e49e0f42a2aeebd2d9cd = $(`<div id="html_aafc165d2932e49e0f42a2aeebd2d9cd" style="width: 100.0%; height: 100.0%;">Cleveland (CLE) - Allows Pets Over 85 Degrees: No</div>`)[0];
+            popup_f108a4b94c881bf71b1343d61bf2fa90.setContent(html_aafc165d2932e49e0f42a2aeebd2d9cd);
+        
 
-var popup_cleveland = L.popup({ maxWidth: "100%" });
-var html_cleveland = $(
-  `<div id="html_cleveland" style="width: 100%; height: 100%;">
-     Cleveland (CLE) - Allows Pets Under 85 Degrees: Yes
-   </div>`
-)[0];
-popup_cleveland.setContent(html_cleveland);
-marker_8a52a773e9d9b0df84d811aea4332efc.bindPopup(popup_cleveland);
+        marker_8a52a773e9d9b0df84d811aea4332efc.bindPopup(popup_f108a4b94c881bf71b1343d61bf2fa90)
+        ;
 
         
     
